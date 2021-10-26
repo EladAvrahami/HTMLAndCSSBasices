@@ -1,0 +1,19 @@
+body{margin: 0;background-color: silver;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.container{max-width: 800px;background-color: white;margin: auto;padding: 8px;}
+h1{text-align: center;}
+.row1{display: flex;}/*מחלק אוטומטית את התצוגה לפי כמות מלל בתוך כל דיב לצורת טבלה */
+/*סהכ הפלקסים זה השלם ולכן בוקס 1 יהיה 25% בוקס 2 50% וכן הלאה*/
+.box1{ flex:1;background-color: yellow;
+order: 3;}/*למרות שהדיב בוקס 1 לפי סדר הדיבים ראשון האורדר מאפשר לי לשנות להם את הסדר*/
+.box2{ flex:2;display: flex;align-items: center;justify-content: center;}
+.box3{ flex:1;background-color: red;
+    order:-1;}/*למרות שבסדר כתיבת הדיבים הוא רשןם אחרון ניתן לשנות את מיקומו לראשון כך:הנה*/
+.row1 > div{border: 1px solid green; /*:כדי שהעיצוב ישפיע על כל הדיבים שבתוך הדיב רואו1 */
+padding: 8px;}
+
+.row2{border: 2px solid grey; display: flex;align-items: stretch;/*the options are:strach,flex-end,flex-start,center*/
+justify-content:space-between;}/*the options are:flex-end,flex-start,center,space-around,space-between */
+.box_a{min-height: 150px;background-color: orange;width: 30%;}
+.box_b{background-color: darkcyan;width: 30%
+    ;display: flex; align-items: center;justify-content: center;}/*כדי שהמלל יהיה באמצע הדיב*/
+.box_c{background-color: greenyellow;width: 30%;align-self: center;}/*כדי להשפיע רק על בודד באופן ממוקד*/

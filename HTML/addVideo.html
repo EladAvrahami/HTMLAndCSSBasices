@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add video+mp3+youtube video class 21</title>
+</head>
+<body>
+    <div class="containaer" style="background-color: red;width: 600px;height: 800px;margin: auto;">
+       <!--איך להוסיף סרטון-->
+        <video width="600" height="400" controls  ><!--autoplay :יתחיל לי את הסרטון באופן אוטומטי כשנפתח את העמוד-->
+            <!--קונטרולס יראה את המקשים של השליטה בסרטון-->
+            <source src="_CSS/howtodownloudvideo.mp4" type="video/mp4">
+                Your browser does not support the audio element.<!--הדפדפן יציג הודעה זאת ללא תומכים בוידאו-->
+          </video>
+          <!--איך להוסיף קובץ קול -->
+          <audio controls  style="padding-top: 30px;"><!-- כדי להעלים את התצוגה ושיהיה מוזיקת רקע לאתרautoplay ניתן גם להוסיף  -->
+            <source src="horse.mp3" type="audio/mpeg">
+          </audio>
+          <!--הטמעת וידאו מיוטיוב-->
+          <iframe style="padding-top: 30px;" width="400" height="200"
+           src="https://www.youtube.com/embed/ahYm0zTeHKc?list=PLP-UKVDk32JhdcvmAFL65Y2GnpWLlCCUE" 
+          frameborder="0" allow="accelerometer; autoplay;
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <!-- בסוף הקישור מיוטיוב&autoplay=1 אם נרצה שהסרטון מיוטיוב יתחיל לפעול באופן אוטומטי נוסיף -->
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+
+/*בסוף הקובץ יש דוגמא לאיך להתאים את האתר לסמארטפון או לכל מכשיר אחר */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background-color: #DDDDDD;
+    font-family: arial;
+    direction: rtl;
+    font-size: 0.9em;
+}
+
+.all_site{
+    margin: 0 auto;
+    max-width:1160px;/*כדי להתאים את האתר לטאבלטים או מסכים קטנים יותר (לא סמארטפונים)מקס רוחב*/
+    background-color: white;
+    min-height: 250px;
+}
+
+.header{
+    width:100%;
+    height: 48px;
+    background-image: url(../_images/pic_01.jpg)
+}
+
+.header .logo{
+   float: left;
+   width:100px;
+   text-align: center;
+   border-right: 1px solid silver;
+}
+
+.header .nav{
+   float: right;
+   width:500px;
+   
+   
+}
+
+.header .nav a{
+   display: inline-block;
+   text-decoration: none;
+   color:grey;
+   padding:0 17px;
+   line-height: 48px;
+    border-right: 1px solid silver;
+   
+   
+}
+
+.header .nav a:hover{
+    color:orange;
+}
+
+.main{
+    width:100%;
+    min-height: 300px;
+    background-color: white;
+}
+
+
+
+.main .slider{
+     width:100%;
+    height: 300px;
+    background-image: url(../_images/slider.jpg);
+    background-size: cover;
+    padding: 1px;
+}
+
+.main .slider h1{
+     text-align: center;
+     margin-top: 50px;
+     color:white;
+     font-size: 3.2em;
+    
+}
+
+.main .blocks{
+    width:100%;
+    overflow: hidden;
+    margin-top:20px;
+}
+
+.main .blocks .box{
+    width:24%;
+    min-height: 180px;
+/*    border:1px solid black;*/
+   margin:0 0.5%;
+    float:right;
+    border:1px solid silver;
+}
+
+.main .blocks .box img{ 
+    width:100%;
+    border:1px solid black;
+    border-bottom: 3px solid grey;
+}
+
+.main .blocks .box h3{ 
+    text-align: center;
+}
+
+.main .blocks .box .bottom_box{ 
+    
+    padding:17px;
+}
+
+.main .line{
+    width: 100%;
+    background-image: url(../_images/line_bottom.jpg);
+    height: 40px;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.footer{
+    width:100%;
+    background-color: black;
+    color:white;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+}
+@media only screen and (max-width:500px){/*זה בעצם תנאי שבודק אם המסך קטן מ728 פיקסלים (גודל סמארטפון)*/
+/*.main{background-color: green;}*//*המיין יהפוך ירוק כשהמסך קטן מ728פיקסל */
+.header .nav{display: none;}
+.main .blocks .box{width: 100%;}/*כל בוקס המכילה תמונה וטקסט תהיה ברוחב של 100אחוז מהמסך*/
+.main{padding: 10px;}/*שיהיה מרווח*/
+}

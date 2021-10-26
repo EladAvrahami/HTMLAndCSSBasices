@@ -1,0 +1,15 @@
+body{background-color: silver;margin: 0;/*מרגין 0 בבןדי יעשה שלא יהיה רווח בין הדיב הכללי לעמוד*/
+direction: rtl;
+}
+.all_site{background-color: white;
+width: 800px;height: 700px;margin: 0 auto;
+position: relative;/*מקשר שהאבסולוט בדיב למטה יהיה בתוך הדיב הראשי
+ ולא יצא ממנו לבאדי */
+}
+.box1{width: 120px;height: 120px;
+    background-image: url(images/robot.png);
+position: absolute;/*מאפשר להזיז את האובייקט לפי ציר איקס ווי*/
+/*TOP=Y LEFT=X*//*שנה מס פיקסלים כדי לאשש זאת*/
+left: 50px;
+top: 120px;
+}

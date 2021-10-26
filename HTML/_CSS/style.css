@@ -1,0 +1,19 @@
+body{direction: rtl;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;/* מקרב את המלל לדפנות האתר */
+    background-color: silver;/*ככה רושמי הערה בקובץ CSS */
+}
+.allsite{/*כדי שיבין שמדובר בשם משתנה מסוג קלאס יתחיל עם נקודה */
+    background-color:white;
+    width: 800px;/* רוחב העמוד*/
+    margin: 0 auto;
+    padding:8px;/* פדינג דוחף את הטקסט פנימה ונותן רווח בין דפנות הדיב */
+}
+
+h1 {color:rgb(61, 106, 243);}   /* צבע מלל בכותרת*/
+
+h1,h2{
+    margin: 0;/* מבטל את הרווח שיש בין הכותרות */
+}
+img{float: right;
+margin: 6px;}

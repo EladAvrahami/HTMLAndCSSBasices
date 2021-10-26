@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter1 class 19</title>
+</head>
+<body>
+    <form action="thankyou.html" method="GET">
+      <table><!-- בתוך הטופס נעשה טבלה כדי לעצב טוב יותר את הטופס-->
+          <tr>
+              <td><lable>your name:</lable></td>
+              <td><input type="text";name="username" required autofocus><!--כשהדף נפתח יהיה על הפרטים באופן אוטומטי-->
+            </td><!--תא להזנת התוכן-->
+          </tr>
+          <tr>
+              <td><lable>your phone:</lable> </td>
+              <td> <input type="tel";name="phone" required placeholder="נא הזן מס פלאפון"></td><!--טקסט בתוך תווית האינפוט-->
+          </tr>
+          <tr>
+            <td><lable>your Email:</lable> </td>
+            <td><input type="email";name="mail" required></td>
+        </tr>
+        <tr>
+            <td><label>תאריך לידה</label></td>
+            <td><input type="date" name="date"></td>
+        </tr>
+        <tr>
+            <td><label>color:</label></td>
+            <td align="center"><input type="color" name="color"></td>
+        </tr>
+        <tr>
+            <td><label>מד שביעות רצון:</label></td>
+            <td align="center"><input id="fader" type="range" min="0" max="100" value="0" step="25" name="howhappy"></td>
+        </tr>
+        <tr><!--מכאן מתחיל החלק תיבת בחירת הצבע -->
+            <td><label>choose color:</label></td>
+            <td>
+                <select name="color" id="chaircolor">
+                    <option value="red">color red </option>
+                    <option value="blue">color blue </option>
+                    <option value="green">color green </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+           <td><label>הנני מאשר את התקנון</label>
+        <input type="checkbox" name="confrim"><!--הצאק בוקס יתן לי תיבת ווי -->
+           </td> 
+        </tr>
+        <br>
+        <tr>
+            <td>metirial:</td>
+            <td>
+                <label>עץ</label>
+                <input type="radio" name="chomer"><!--בגלל שהשם של שניהם אותו
+                דבר זה בעצם ייתן לי לבחור רק אחד משום שרק אחד יכול 
+            להישלח לבסיס הנתונים -->
+                <label>מתכת</label>
+                <input type="radio" name="chomer">
+            </td>
+        </tr>
+        </table>
+    <br>
+    <br>
+    <button type="submit">send data</button>
+    
+     
+</form>
+<br>
+<br>
+<br>
+<br>
+
+<!--תגיות הבסיס של טבלה :-->
+<label>מבנה טבלה בסיסית </label>
+<table border="1" width=200>
+    <tr>
+        <th>נצי</th>
+        <td>נצ</td>
+    </tr>
+    <tr>
+        <th>נצי</th>
+        <td>נצ</td>
+    </tr>
+</table>
+</body>
+</html>

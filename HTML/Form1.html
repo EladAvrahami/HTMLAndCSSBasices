@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!--ליצירת טופס נפתח תגית פורם-->
+    <form action="thankyou.html" method="GET">
+        <!--post כדי ששליחת הנתונים תהייה יותר מאובטחת ולא תוצג על המסך נשתמש ב-->
+    <lable>your name:</lable> <!--תגית בשם לייבל להכנסת נתונים-->
+    <input type="text";name="username" required><!--נגדיר ללייבל מהו סוג התוכן 
+    המבוקש(במקרה הזה טקסט)וניתן שם למסד נתונים היכן לקטלג את הטקסט
+     שהוזן-->
+     <br>
+     <lable>your phone:</lable> 
+    <input type="tel";name="phone" required><!--הטייפ טל והטייפ מייל שלמטה 
+    יפתחו בסמארטפון שני מקלדות שונות הטל יפתח רק מספרים והמייל יפתח 
+    מקלדת מלאה  -->
+    <br>
+     <lable>your Email:</lable> 
+    <input type="email";name="mail" required>
+    <br>
+    <br>
+    <button type="submit">send data</button>
+    </form>
+    
+</body>
+</html>

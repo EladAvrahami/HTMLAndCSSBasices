@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body dir="rtl"><!--ניתן מאפיין מימין לשמאל לכל העמוד במידה ורוצים 
+עמוד בעיברית -->
+   <caption>טבלה ראשונה</caption><!--כותרת לטבלה -->
+<table border="1" cellspacing="0"><!--בורדר נותן לטבלה גבולות
+והמאפיין סלספייסינג נותן את הרווח ביניהם-->
+        <tr>
+            <th>no zugi</th><!--השורה עם תאי הכותרת תסומן בטי אייץ-->
+            <th>zugi</th>
+        </tr>
+        <tr>
+            <td>one</td>
+            <td>two</td>
+        </tr>
+        <tr>
+            <td>three</td>
+            <td>four</td>
+        </tr>
+</table>
+<br>
+    <table border="1" align="center">
+    <th>טבלה שניה </th>
+    </table>
+    <br>
+    <table border="1" cellspacing="0" width="300" dir="ltr" align="center">
+     <!--נתתי פה מאפיינים נוספים לטבלה כמו רוחב כיוון הצגתה 
+    ומירכוזה לאמצע הדפדפן-->
+        <tr height="50px" valign="--TOP"><!--TOP,CENTER,BOTTOM-->
+            <!--ניתן לשלוט בגובה השורה ובמיקום הטקסט-->
+                    <th width="33%">no zugi</th>
+                    <th width="33%">zugi</th>
+                    <th width="33%">above 4</th>
+                </tr>
+                <tr>
+                    <td>one</td>
+                    <td>two</td>
+                    <td>five</td>
+                </tr>
+                <tr>
+                    <td>three</td>
+                    <td>four</td>
+                    <td>six</td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">סתם מלל שמדגים COLSPAN</td>
+                    <!--קולספן נותן לי את האפשרות למזג את כל השורה 
+                    בהתאם למס העמודות שייצרתי -->
+                </tr>
+            </table>
+</body>
+</html>

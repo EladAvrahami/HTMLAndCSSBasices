@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    /*כדי לכלול את הפדינג והבורדר בתוך הגדלים של הדיבים שבאבחר בהמשך*/
+}
+body{
+    background-color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.container_fluid{/*שכבת קונטיינרים ראשונית שתתפרס על כך המסך*/
+    width: 100%;
+}
+
+.container{/* שכבת הקונטיינרס ב שתהיה ממורכזת ומתאימה בגובהה לשכבה א */
+    max-width: 1140px;
+    margin: 0 auto;
+    border: solid 2px black;/*תוסיף כדי לראות בבירור יותר מה עושה הפעולה בההערה למטה*/
+    min-height: inherit;/*כדי שהגובה של הקונטיינר הפנימי יהיה מותאם לגובהו של כל דיב שכלוא בתוכו*/
+}
+header{
+    min-height: 100px;/*מיני הייט כדי שאם אהפוך את האתר לריספונסיבי הוא יימתח ביחד עם הדיבים שבתוכו*/
+    background-color: white;
+}
+header .logo{
+    max-width: 261px;/*הרוחב של הלוגו ישתנה מאתר לאתר תלוי בעיצובו*/
+}
+header .logo .img{
+    width: 100%;/*כדי שכשהדיב לוגו יתחיל לקטון התמונה תהייה קטנה בהתאם*/
+}
+.strip{
+    min-height: 300px;
+    background-color: purple;
+    background-image: url(images/strip.png);
+    background-size: cover;/*כדי שהרקע יתאים את עצמו בדיוק לדיב */
+    background-position: center top;/*גם שנקטים את המסך ואטוטמטית את הדיב התמונה תיראה במסך*/
+
+}
+
+.blocks{
+    min-height: 100px;
+    background-color: #ddd;
+}
+
+footer{
+    min-height: 300px;
+    background-color: #333;
+}

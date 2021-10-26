@@ -1,0 +1,33 @@
+
+/*BACKGROUNDIMAGE קובץ המשוייך במקור ל */
+
+body{margin: 0;background-color:rgb(184, 184, 184);
+    font-family: Arial, Helvetica, sans-serif;
+    }
+ .all_site{
+     width: 900px;
+     background-color: rgb(255, 255, 255);
+     height:600px;
+     margin: 0 auto;                    
+    }
+    #box1{
+        width: 70%;
+        height: 500px;
+        float: left;
+        background:url(images/sharps.jpeg) no-repeat center;
+        /*other option to "no repaet" are: repaet-x or repaet-y*/
+        /* כדי שהתמונה תהייה בטמצע הדיב נרשום סנטר*/
+        border:5px dashed red;
+        background-size: 100% 100%;}
+        /* הגדרת גודל הרקע הכלוא בתוך הדיב 
+        הפרמטר הראשון זה הרוחב והשני גובה */
+        #box2{
+            float:right;
+            width: 180px;
+            height: 500px;
+            border: 5px dashed rgb(0, 255, 115);}
+            /*dashed -יוצר קו מקווקוו*/
+        
+   
+     
+   

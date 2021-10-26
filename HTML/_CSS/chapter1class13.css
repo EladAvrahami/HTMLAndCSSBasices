@@ -1,0 +1,21 @@
+
+       body{font-family: Arial, Helvetica, sans-serif;
+            background: url(images/sharps.jpeg) no-repeat;background-size: 100% 100%;
+       margin: 0 auto; }/*מרגין 0 מונע רווחים בין הטקסט לעמוד */
+       .header{background-color:indigo;margin: 0 auto;width: 800px;height: 100px;
+        display: flex;
+        align-items: center;/*מוריד את התוכן לאמצע גובה הכותרת*/
+        justify-content: center;/*מזיז את התוכן לאמצע רוחב הכותרת*/    
+            }
+        
+       #main_box{background-color: azure;width: 800px;/*height: 800px;*/
+                overflow: hidden;/* כדי שהמיין בוקס תסתדר אוטומטית בהתאם לדיבים שבתוכה וגם תצמיד אותם לכותרת  */
+                 margin: 0 auto;}  /*זאת השורה שממרכזת את הדיב הראשי לאמצע העמוד */
+        #box1{width: 30%;height: 200px;background-color: red;
+        float: left;padding-left: 10px;padding-top: 20px;}/*יש כל מיני סוגי פדינג שיוצרים רווח בטקסט מכל הצדדים*/
+        #box2{width: 30%;height: 200px;background-color: yellow;
+        float: left;margin-left: 30px;}/*המרגין יתן לי 50 סמ שמאלה 
+        מהדיב האדום*/
+        #box3{width:30%;height: 200px;background-color: green;
+        float: right;border: 5px dashed rgb(0, 8, 4);} /*שוליים זיגזג*/
+       /* p.clear{clear: both;} /*כדי שיראו את הדיב הראשי ולא ישתלב ברקע */
